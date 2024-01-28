@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Segmentation and Personalized Marketing Analysis</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #000; /* Black Background */
+            margin: 0;
+            padding: 0;
+            color: #fff; /* White Text */
+            text-align: center;
+        }
+
+        h1 {
+            color: #4CAF50;
+            margin-top: 50px;
+        }
+
+        p {
+            font-size: 18px;
+            margin: 20px auto;
+            max-width: 80%;
+            line-height: 1.5;
+        }
+
+        img {
+            max-width: 80%;
+            height: auto;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            padding: 8px;
+            margin: 20px auto;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            display: block;
+        }
+
+        a {
+            color: #1e90ff;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .navigation-bar {
+            background-color: #333;
+            padding: 10px;
+            margin-bottom: 20px; /* Added margin at the bottom */
+        }
+
+        .navigation-bar a {
+            color: #fff;
+            padding: 10px;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+
+        .navigation-bar a:hover {
+            background-color: #555;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalized Marketing Analysis</h1>
+
+    <!-- Navigation Bar -->
+    <div class="navigation-bar">
+        <a href="{{ url_for('segmentation') }}">Customer Segmentation Page</a>
+    </div>
+
+    <!-- Introductory Text -->
+    <p>Welcome to the Analysis page. Explore the following visualizations that provide insights into customer demographics and spending patterns.</p>
+    
+    <!-- Images -->
+    <img src="{{ url_for('static', filename='images/Annual Income in k$.png') }}" alt="Plot 1">
+    <img src="{{ url_for('static', filename='images/Gender Based Analysis.png') }}" alt="Plot 2">
+    <img src="{{ url_for('static', filename='images/kde_plot_age.png') }}" alt="Plot 3">
+    <img src="{{ url_for('static', filename='images/kde_plot_annual_income_(k$).png') }}" alt="Plot 4">
+    <img src="{{ url_for('static', filename='images/kde_plot_spending_score_(1-100).png') }}" alt="Plot 5">
+    <img src="{{ url_for('static', filename='images/Annual Income vs Spending Score.png') }}" alt="Plot 6">
+</body>
+</html>
